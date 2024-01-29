@@ -120,7 +120,7 @@ class T3B(autograder.question.Question):
                 continue
 
             if (not isinstance(result, (float, numpy.float64, numpy.float32))):
-                self.add_message("%s() must return a float.")
+                self.add_message("%s() must return a float." % (name))
                 continue
 
             self.add_score(1)
